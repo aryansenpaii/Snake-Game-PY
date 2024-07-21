@@ -1,7 +1,7 @@
 
 # Python Snake Game
 
-![Snake Game Screenshot](snake_game_screenshot.png)
+![Snake Game Screenshot]()
 
 ## Description
 This is a simple Snake game built using Python and two popular modules: `tkinter` for the GUI and `turtle` for the game mechanics. The game is a classic representation of the Snake game, where the player controls a snake that moves around the board eating food to grow longer. The game ends if the snake runs into the wall or into itself.
@@ -34,7 +34,8 @@ To play the game, follow these steps:
 - `turtle` module
 
 ## Screenshots
-![Gameplay Screenshot](screenshots/gameplay.png)
+![Gameplay Screenshot](screenshots/1.png)
+![](screenshots/2.png)
 
 ## Contributing
 Contributions are welcome! Please feel free to fork the repository and submit pull requests.
