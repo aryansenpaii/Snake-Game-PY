@@ -44,5 +44,3 @@ Contributions are welcome! Please feel free to fork the repository and submit pu
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-Replace `your-username` in the clone URL with your actual GitHub username or organization name. You can also add more sections or customize the README further based on additional features or specific details of your Snake game.
