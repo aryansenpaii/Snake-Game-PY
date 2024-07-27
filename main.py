@@ -63,14 +63,16 @@ homepage = Turtle()
 homepage.hideturtle()
 homepage.penup()
 homepage.pencolor("white")
-style = ('Courier', 30, 'bold')
-style2 = ('Courier', 23, 'bold')
+style = ('Courier', 50, 'bold')
+style2 = ('Courier', 19, 'bold')
 
 # Display start screen text
 homepage.goto(0, 0)
-homepage.write('Python Game!', font=style, align='center')
+homepage.write('Snake Game!', font=style, align='center')
 homepage.goto(0, -30)
 homepage.write('Press Space to Play!', font=style2, align='center')
+homepage.goto(0,-250)
+homepage.write('By: Aryan Kumar ', font=style2, align='center')
 
 # Bind the start function to the spacebar key
 screen.listen()
