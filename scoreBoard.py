@@ -8,6 +8,7 @@ class Scoreboard(Turtle):
         super().__init__()
         self.score=0
         self.pencolor("white")
+        self.highScore=0
         self.hideturtle()
         self.penup()
         self.goto(0,260)
@@ -15,8 +16,12 @@ class Scoreboard(Turtle):
 
     def refresh(self,count):
         self.clear()
-        self.write(f"Score: {count}",align=ALIGNMENT,font=FONT)
+        self.score=count;
+        self.write(f"Score: {count} High Score: {self.highScore}",align=ALIGNMENT,font=FONT)
 
-    def gameOver(self):
-        self.goto(0, 0)
-        self.write("GAME OVER!!", align=ALIGNMENT, font=FONT)
+
+    def reset(self):
+        if(self.score>self.highScore):
+            self.highScore=self.score
+        self.score=0
+        self.refresh(self.score)

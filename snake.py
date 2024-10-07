@@ -16,6 +16,15 @@ class Snake:
         for coordinates in STARTING_POSITIONS:
             self.add_segment(coordinates)
 
+
+    #USED TO RESET THE SNAKE INSTEAD OF SHOWING GAMEOVER( part of the high score functionality)
+    def resetSnake(self):
+        for seg in self.segments:
+            seg.goto(1000,1000)
+        self.segments.clear()
+        self.createSnake()
+        self.head=self.segments[0]
+
     def add_segment(self,coordinates):
         new_s = Turtle(shape="square")
         new_s.color("white")
